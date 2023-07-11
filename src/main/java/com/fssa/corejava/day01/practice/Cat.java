@@ -2,8 +2,8 @@ package com.fssa.corejava.day01.practice;
 
 public class Cat {
 	// Attributes
-	private int age;
-	private String color;
+	int age;
+	String color;
 
 	// Getters and setters
 	public int getAge() {
@@ -48,5 +48,6 @@ public class Cat {
 		System.out.println("Color: " + cat2.getColor());
 		System.out.print("Speaks: ");
 		cat1.speaks();
+
 	}
 }

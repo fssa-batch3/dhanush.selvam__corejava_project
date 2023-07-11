@@ -1,4 +1,4 @@
-package com.fssa.corejava.day01.mis;
+package com.fssa.corejava.day01.misc;
 
 public class Dog {
 	// Attributes
