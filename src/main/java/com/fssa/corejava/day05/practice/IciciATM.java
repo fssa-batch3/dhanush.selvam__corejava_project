@@ -1,0 +1,28 @@
+package com.fssa.corejava.day05.practice;
+
+public class IciciATM implements ATM {
+	
+	@Override
+	public boolean deposit(Account account,double amount) {
+		account.setBalance(account.getBalance() + amount);
+		return true;
+	}
+	
+	@Override
+	public boolean withdraw(Account account,double amount) throws Exception {
+		
+		double balance = account.getBalance();
+		if (balance > 10000) {
+			account.setBalance(account.getBalance() - (amount + 10));
+			return true;
+		}
+		else throw new Exception("Minimum amount should be 5000");
+
+	}
+	
+	@Override
+	public double getBalance(Account account) {
+		return account.getBalance();
+	}
+
+}
